@@ -1,0 +1,122 @@
+/* font */
+
+@font-face {
+    font-family: 'product_sansbold';
+    src: url('../font/product_sans_bold-webfont.woff2') format('woff2');
+    src: url('../font/product_sans_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'product_sansregular';
+    src: url('../font/product_sans_regular-webfont.woff2') format('woff2');
+    src: url('../font/product_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Alex';
+    src: url('../font/alex.woff') format('Woff'),
+         url('../font/alex.woff2') format('woff2');
+}
+
+/* header */
+
+
+
+/* Style Utama */
+
+body{
+    font-size: 18px;
+    line-height: 36px;
+    font-family:'product_sansregular',Verdana, Geneva, Tahoma, sans-serif ;
+    background-color:#2c7873;
+}
+
+h1{
+    font-family:'product_sansbold';
+    font-size: 60px;
+    margin: 50px 0;
+    text-align: center;
+    color: #1b262c;
+    animation: animasiJudul 10s infinite ;
+    transition: 2ms;
+}
+
+@keyframes animasiJudul{
+    0%{
+        color: #1b262c;
+    }
+
+    25%{
+        color: #f8b195;
+    }
+    50%{
+        color: #f67280;
+    }
+    65%{
+        color: #c06c84;
+    }
+
+
+
+}
+.container{
+    width: 800px;
+    background-color: white;
+    margin:auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 6px rgba(0,0,0,.3);
+    
+}
+
+.gallery li{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.gallery li span{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(200,200,200,.5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 200px;
+    color: #1b262c;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.gallery li a:hover span{
+    opacity: 1;
+    transition: 300ms;
+}
+
+.gallery li,
+.gallery li span,
+.gallery li img{
+    border-radius: 50%;
+    
+}
+.clear{
+    clear: both;
+}
+
+
+/* footer */
+.footer{
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
